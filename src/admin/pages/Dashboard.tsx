@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import { 
   GraduationCap, 
   Mail, 
-  BookOpen, 
   Briefcase, 
   Plus, 
   ArrowRight, 
-  CheckCircle2, 
   Activity,
   UserPlus
 } from "lucide-react";

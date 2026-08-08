@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Plus, Edit, Trash2, BookOpen } from "lucide-react";
+import { Plus, Edit, Trash2 } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { StatusBadge } from "../components/StatusBadge";
 import { DataTable } from "../components/DataTable";
@@ -98,7 +98,10 @@ export const AdminCourses: React.FC = () => {
                   </div>
                 )
               },
-              { header: "CATEGORY", accessor: "category" },
+              {
+                header: "CATEGORY",
+                accessor: (item) => <span>{item.category || "Web Development"}</span>
+              },
               { header: "DURATION", accessor: "duration" },
               { header: "LEVEL", accessor: "level" },
               {
@@ -117,7 +120,7 @@ export const AdminCourses: React.FC = () => {
                   <div className="flex items-center space-x-2">
                     <Button
                       variant="secondary"
-                      size="xs"
+                      size="sm"
                       onClick={() => navigate(`/admin/courses/${item.id}/edit`)}
                       leftIcon={<Edit className="w-3.5 h-3.5" />}
                     >
@@ -125,7 +128,7 @@ export const AdminCourses: React.FC = () => {
                     </Button>
                     <Button
                       variant="outline"
-                      size="xs"
+                      size="sm"
                       onClick={() => setDeleteTarget(item)}
                       className="border-red-500/30 text-red-400 hover:bg-red-500/10"
                     >

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Save, CheckCircle2, Building, Globe, Share2 } from "lucide-react";
+import { Save, CheckCircle2, Building, Share2 } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { Button } from "../../components/ui/Button";
 import { Input } from "../../components/ui/Input";
@@ -128,11 +128,11 @@ export const AdminSettings: React.FC = () => {
                 <Input
                   label="Official Location Address"
                   required
-                  value={settings.contact.address}
+                  value={settings.location.fullLocation}
                   onChange={(e) =>
                     setSettings({
                       ...settings,
-                      contact: { ...settings.contact, address: e.target.value }
+                      location: { ...settings.location, fullLocation: e.target.value, address: e.target.value }
                     })
                   }
                 />
@@ -148,45 +148,45 @@ export const AdminSettings: React.FC = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <Input
-                  label="WhatsApp URL"
-                  value={settings.social.whatsapp}
+                  label="WhatsApp URL / Number"
+                  value={settings.contact.whatsapp}
                   onChange={(e) =>
                     setSettings({
                       ...settings,
-                      social: { ...settings.social, whatsapp: e.target.value }
+                      contact: { ...settings.contact, whatsapp: e.target.value }
                     })
                   }
                 />
 
                 <Input
                   label="GitHub Organization URL"
-                  value={settings.social.github}
+                  value={settings.socials.github}
                   onChange={(e) =>
                     setSettings({
                       ...settings,
-                      social: { ...settings.social, github: e.target.value }
+                      socials: { ...settings.socials, github: e.target.value }
                     })
                   }
                 />
 
                 <Input
                   label="LinkedIn Page URL"
-                  value={settings.social.linkedin}
+                  value={settings.socials.linkedin}
                   onChange={(e) =>
                     setSettings({
                       ...settings,
-                      social: { ...settings.social, linkedin: e.target.value }
+                      socials: { ...settings.socials, linkedin: e.target.value }
                     })
                   }
                 />
 
                 <Input
                   label="Twitter / X Handle URL"
-                  value={settings.social.twitter}
+                  value={settings.socials.twitter}
                   onChange={(e) =>
                     setSettings({
                       ...settings,
-                      social: { ...settings.social, twitter: e.target.value }
+                      socials: { ...settings.socials, twitter: e.target.value }
                     })
                   }
                 />

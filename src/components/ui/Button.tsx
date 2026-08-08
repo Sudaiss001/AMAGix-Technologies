@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 
 export interface ButtonProps extends Omit<HTMLMotionProps<"button">, "children"> {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "danger";
-  size?: "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
   isLoading?: boolean;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
@@ -35,6 +35,7 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const sizes = {
+    xs: "px-2.5 py-1 text-[11px] gap-1",
     sm: "px-3.5 py-1.5 text-xs gap-1.5",
     md: "px-5 py-2.5 text-sm gap-2",
     lg: "px-7 py-3.5 text-base gap-2.5 font-semibold"

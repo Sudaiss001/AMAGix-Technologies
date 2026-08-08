@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Plus, Edit, Trash2, ExternalLink, Briefcase } from "lucide-react";
+import { Plus, Edit, Trash2 } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { StatusBadge } from "../components/StatusBadge";
 import { DataTable } from "../components/DataTable";
@@ -122,7 +122,7 @@ export const AdminProjects: React.FC = () => {
                   <div className="flex items-center space-x-2">
                     <Button
                       variant="secondary"
-                      size="xs"
+                      size="sm"
                       onClick={() => navigate(`/admin/projects/${item.id}/edit`)}
                       leftIcon={<Edit className="w-3.5 h-3.5" />}
                     >
@@ -130,7 +130,7 @@ export const AdminProjects: React.FC = () => {
                     </Button>
                     <Button
                       variant="outline"
-                      size="xs"
+                      size="sm"
                       onClick={() => setDeleteTarget(item)}
                       className="border-red-500/30 text-red-400 hover:bg-red-500/10"
                     >

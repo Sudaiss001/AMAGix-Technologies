@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 export interface AdminUser {
   id: string;
@@ -37,7 +37,6 @@ export const AdminAuthProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   });
 
   const login = async (email: string, password: string, rememberMe = false): Promise<{ success: boolean; message?: string }> => {
-    // Frontend demo login simulation (will be replaced by Laravel API endpoint later)
     await new Promise((resolve) => setTimeout(resolve, 600));
 
     if (!email || !password) {

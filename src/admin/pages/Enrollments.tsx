@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { Search, Filter, Eye, GraduationCap, CheckCircle2, UserX } from "lucide-react";
+import { Search, Eye, GraduationCap } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { StatusBadge } from "../components/StatusBadge";
 import { DataTable } from "../components/DataTable";
@@ -159,7 +159,7 @@ export const AdminEnrollments: React.FC = () => {
                 header: "ACTION",
                 accessor: (item) => (
                   <Link to={`/admin/enrollments/${item.id}`}>
-                    <Button variant="secondary" size="xs" leftIcon={<Eye className="w-3.5 h-3.5" />}>
+                    <Button variant="secondary" size="sm" leftIcon={<Eye className="w-3.5 h-3.5" />}>
                       Inspect
                     </Button>
                   </Link>

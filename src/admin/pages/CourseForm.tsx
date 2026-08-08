@@ -27,7 +27,7 @@ export const AdminCourseForm: React.FC = () => {
     slug: "",
     category: "Web Development",
     duration: "8 Weeks",
-    level: "Beginner to Intermediate",
+    level: "Beginner",
     shortDescription: "",
     fullDescription: "",
     status: "Published"
@@ -136,7 +136,7 @@ export const AdminCourseForm: React.FC = () => {
                   <label className="block text-xs font-semibold text-gray-300">Category *</label>
                   <select
                     value={formData.category || "Web Development"}
-                    onChange={(e) => setFormData({ ...formData, category: e.target.value as any })}
+                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                     className="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 font-mono"
                   >
                     <option value="Web Development">Web Development</option>
@@ -155,15 +155,16 @@ export const AdminCourseForm: React.FC = () => {
                 />
 
                 <div className="space-y-1.5">
-                  <label className="block text-xs font-semibold text-gray-300">Publish Status *</label>
+                  <label className="block text-xs font-semibold text-gray-300">Skill Level *</label>
                   <select
-                    value={formData.status || "Published"}
-                    onChange={(e) => setFormData({ ...formData, status: e.target.value as any })}
+                    value={formData.level || "Beginner"}
+                    onChange={(e) => setFormData({ ...formData, level: e.target.value as any })}
                     className="w-full bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 font-mono"
                   >
-                    <option value="Published">Published</option>
-                    <option value="Draft">Draft</option>
-                    <option value="Archived">Archived</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="All Levels">All Levels</option>
                   </select>
                 </div>
               </div>

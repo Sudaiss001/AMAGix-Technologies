@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Star, CheckCircle2, XCircle, Trash2 } from "lucide-react";
+import { Star, CheckCircle2, XCircle } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { StatusBadge } from "../components/StatusBadge";
 import { DataTable } from "../components/DataTable";
@@ -108,7 +108,7 @@ export const AdminTestimonials: React.FC = () => {
                     {item.status !== "Published" ? (
                       <Button
                         variant="secondary"
-                        size="xs"
+                        size="sm"
                         onClick={() => handleStatusToggle(item.id, "Published")}
                         leftIcon={<CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />}
                       >
@@ -117,7 +117,7 @@ export const AdminTestimonials: React.FC = () => {
                     ) : (
                       <Button
                         variant="outline"
-                        size="xs"
+                        size="sm"
                         onClick={() => handleStatusToggle(item.id, "Pending")}
                         leftIcon={<XCircle className="w-3.5 h-3.5 text-amber-400" />}
                       >

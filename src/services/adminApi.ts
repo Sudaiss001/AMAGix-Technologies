@@ -7,14 +7,12 @@ import { mockTestimonials, type TestimonialRecord } from "../admin/data/mockTest
 import { mockCertifications, type CertificationRecord } from "../admin/data/mockCertifications";
 import { siteConfig, type SiteConfig } from "../data/site";
 
-// Shared API Response Wrapper matching future Laravel REST API responses
 export interface ApiResponse<T> {
   success: boolean;
   message?: string;
   data: T;
 }
 
-// In-Memory Storage for Demo Session State Mutations
 let enrollmentsStore = [...mockEnrollments];
 let messagesStore = [...mockMessages];
 let coursesStore = [...mockCourses];
@@ -25,10 +23,6 @@ let siteSettingsStore = { ...siteConfig };
 
 const delay = (ms = 250) => new Promise((resolve) => setTimeout(resolve, ms));
 
-/**
- * Admin API Abstraction Layer
- * Structured for future Laravel REST API backend connection (/api/v1/admin/...)
- */
 export const adminApi = {
   // --- Dashboard API ---
   async getDashboardStats(): Promise<ApiResponse<{ stats: DashboardStats; activities: ActivityItem[]; courseInterest: typeof mockCourseInterestData }>> {
@@ -134,11 +128,17 @@ export const adminApi = {
       category: courseData.category || "Web Development",
       shortDescription: courseData.shortDescription || "",
       fullDescription: courseData.fullDescription || "",
+      iconName: "Globe",
+      topics: [],
       duration: courseData.duration || "8 Weeks",
-      level: courseData.level || "Beginner to Intermediate",
+      level: (courseData.level as any) || "Beginner",
+      prerequisites: [],
+      whoIsThisFor: [],
+      whatYouWillLearn: [],
       curriculum: courseData.curriculum || [],
       learningFormat: courseData.learningFormat || ["Physical Classes in Minna Hub"],
       faqs: [],
+      featured: false,
       status: courseData.status || "Published",
       enrolledStudentsCount: 0
     };

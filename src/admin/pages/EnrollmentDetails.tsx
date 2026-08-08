@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, User, Mail, Phone, MapPin, GraduationCap, Calendar, Clock, CheckCircle2 } from "lucide-react";
+import { useParams, useNavigate } from "react-router-dom";
+import { ArrowLeft, Mail, Phone, MapPin, GraduationCap, Calendar, Clock, CheckCircle2 } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { StatusBadge } from "../components/StatusBadge";
-import { Button } from "../../components/ui/Button";
 import { Card } from "../../components/ui/Card";
 import { LoadingState } from "../components/LoadingState";
 import { ErrorState } from "../components/ErrorState";

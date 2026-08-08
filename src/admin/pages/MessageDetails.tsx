@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, Mail, Phone, Calendar, CheckCircle2, Archive, Reply } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Archive, Reply } from "lucide-react";
 import { AdminLayout } from "../components/AdminLayout";
 import { StatusBadge } from "../components/StatusBadge";
 import { Button } from "../../components/ui/Button";

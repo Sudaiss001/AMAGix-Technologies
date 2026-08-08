@@ -137,7 +137,7 @@ export const AdminCertifications: React.FC = () => {
                 accessor: (item) => (
                   <Button
                     variant="outline"
-                    size="xs"
+                    size="sm"
                     onClick={() => handleDelete(item.id)}
                     className="border-red-500/30 text-red-400 hover:bg-red-500/10"
                   >
