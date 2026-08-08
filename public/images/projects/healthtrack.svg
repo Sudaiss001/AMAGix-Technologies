@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#06121E" />
+      <stop offset="100%" stop-color="#062C24" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Navbar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0B0F17" />
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#334155" stroke-width="1" />
+  <text x="40" y="36" fill="#10B981" font-family="system-ui, sans-serif" font-weight="800" font-size="18">🏥 HealthTrack Mobile App</text>
+  <text x="320" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Patient Telehealth & Clinic Appointment Suite</text>
+
+  <!-- Mobile Phone Interface Preview Frame (Center) -->
+  <g transform="translate(420, 80)">
+    <rect x="0" y="0" width="360" height="560" rx="36" fill="#090D16" stroke="#10B981" stroke-width="3" />
+    
+    <!-- Phone Notch -->
+    <rect x="120" y="12" width="120" height="18" rx="9" fill="#1E293B" />
+
+    <!-- Phone App Header -->
+    <text x="30" y="65" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700">WELCOME BACK</text>
+    <text x="30" y="90" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="800">Hello, Fatima 👋</text>
+
+    <!-- Upcoming Appointment Card -->
+    <rect x="25" y="115" width="310" height="130" rx="14" fill="url(#emeraldGrad)" />
+    <text x="45" y="145" fill="#090D16" font-family="sans-serif" font-size="11" font-weight="700">NEXT APPOINTMENT</text>
+    <text x="45" y="175" fill="#090D16" font-family="sans-serif" font-size="18" font-weight="800">Dr. S. Ibrahim</text>
+    <text x="45" y="195" fill="#090D16" font-family="sans-serif" font-size="12" opacity="0.8">Cardiology Clinic • Room 3B</text>
+    <text x="45" y="225" fill="#090D16" font-family="sans-serif" font-size="13" font-weight="700">🗓 Tomorrow, 10:30 AM</text>
+
+    <!-- Patient Vitals Row -->
+    <text x="25" y="275" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="700">Daily Health Vitals</text>
+    
+    <rect x="25" y="290" width="145" height="90" rx="10" fill="#1E293B" />
+    <text x="40" y="315" fill="#94A3B8" font-family="sans-serif" font-size="11">Heart Rate</text>
+    <text x="40" y="350" fill="#EF4444" font-family="sans-serif" font-size="22" font-weight="800">72 bpm</text>
+    <text x="40" y="368" fill="#10B981" font-family="sans-serif" font-size="10">♥ Normal</text>
+
+    <rect x="190" y="290" width="145" height="90" rx="10" fill="#1E293B" />
+    <text x="205" y="315" fill="#94A3B8" font-family="sans-serif" font-size="11">Blood Pressure</text>
+    <text x="205" y="350" fill="#06B6D4" font-family="sans-serif" font-size="22" font-weight="800">120/80</text>
+    <text x="205" y="368" fill="#10B981" font-family="sans-serif" font-size="10">✓ Optimal</text>
+
+    <!-- Quick Action Emergency Button -->
+    <rect x="25" y="405" width="310" height="48" rx="12" fill="#EF4444" />
+    <text x="180" y="434" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">🚨 Emergency Dispatch</text>
+
+    <!-- Bottom Tab Bar -->
+    <rect x="0" y="490" width="360" height="70" rx="0" fill="#0B0F17" />
+    <text x="45" y="530" fill="#10B981" font-family="sans-serif" font-size="20">🏠</text>
+    <text x="135" y="530" fill="#64748B" font-family="sans-serif" font-size="20">📅</text>
+    <text x="225" y="530" fill="#64748B" font-family="sans-serif" font-size="20">💊</text>
+    <text x="315" y="530" fill="#64748B" font-family="sans-serif" font-size="20">👤</text>
+  </g>
+</svg>

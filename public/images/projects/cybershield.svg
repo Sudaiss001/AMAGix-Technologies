@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#06121E" />
+      <stop offset="100%" stop-color="#0D2235" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Navbar Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0B0F17" />
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#1E293B" stroke-width="1" />
+  <text x="40" y="36" fill="#06B6D4" font-family="system-ui, sans-serif" font-weight="800" font-size="18">🛡 CyberShield Security Suite</text>
+  <text x="320" y="35" fill="#64748B" font-family="sans-serif" font-size="12">Enterprise Endpoint & Vulnerability Monitor</text>
+
+  <rect x="960" y="14" width="200" height="32" rx="6" fill="#06B6D4" opacity="0.15" stroke="#06B6D4" />
+  <text x="1060" y="35" fill="#06B6D4" font-family="sans-serif" font-size="12" font-weight="700" text-anchor="middle">System Protected 🛡</text>
+
+  <!-- Top Metric Cards Row -->
+  <g transform="translate(40, 80)">
+    <!-- Metric 1: Security Score -->
+    <rect x="0" y="0" width="260" height="130" rx="10" fill="#0F172A" stroke="#1E293B" />
+    <text x="20" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Overall Security Health</text>
+    <text x="20" y="80" fill="#10B981" font-family="sans-serif" font-size="36" font-weight="800">98 / 100</text>
+    <text x="20" y="105" fill="#10B981" font-family="sans-serif" font-size="11">Grade A+ (All Audits Passed)</text>
+
+    <!-- Metric 2: Threats Blocked -->
+    <rect x="286" y="0" width="260" height="130" rx="10" fill="#0F172A" stroke="#1E293B" />
+    <text x="306" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Threats Blocked (24h)</text>
+    <text x="306" y="80" fill="#06B6D4" font-family="sans-serif" font-size="36" font-weight="800">1,429</text>
+    <text x="306" y="105" fill="#06B6D4" font-family="sans-serif" font-size="11">Zero Critical Vulnerabilities</text>
+
+    <!-- Metric 3: SSL Expiry -->
+    <rect x="572" y="0" width="260" height="130" rx="10" fill="#0F172A" stroke="#1E293B" />
+    <text x="592" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">SSL/TLS Cert Status</text>
+    <text x="592" y="80" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="800">Valid (TLS v1.3)</text>
+    <text x="592" y="105" fill="#94A3B8" font-family="sans-serif" font-size="11">Renews in 240 days</text>
+
+    <!-- Metric 4: Active Endpoints -->
+    <rect x="858" y="0" width="262" height="130" rx="10" fill="#0F172A" stroke="#1E293B" />
+    <text x="878" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Audited Web Headers</text>
+    <text x="878" y="80" fill="#8B5CF6" font-family="sans-serif" font-size="36" font-weight="800">12 / 12</text>
+    <text x="878" y="105" fill="#8B5CF6" font-family="sans-serif" font-size="11">HSTS, CSP, XFO Enforced</text>
+  </g>
+
+  <!-- Live Attack Vector Graph & Log Panel -->
+  <g transform="translate(40, 230)">
+    <!-- Left Graph Panel (700px) -->
+    <rect x="0" y="0" width="700" height="400" rx="10" fill="#0F172A" stroke="#1E293B" />
+    <text x="25" y="35" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">Real-Time Traffic & Anomaly Telemetry</text>
+    
+    <!-- Graph Line SVG Path -->
+    <path d="M 25 320 Q 120 280 200 300 T 400 180 T 550 220 T 675 140" fill="none" stroke="#06B6D4" stroke-width="3" />
+    <path d="M 25 320 Q 120 280 200 300 T 400 180 T 550 220 T 675 140 L 675 350 L 25 350 Z" fill="#06B6D4" opacity="0.1" />
+
+    <!-- Graph Axis -->
+    <line x1="25" y1="350" x2="675" y2="350" stroke="#334155" />
+    <text x="30" y="375" fill="#64748B" font-family="sans-serif" font-size="10">00:00</text>
+    <text x="200" y="375" fill="#64748B" font-family="sans-serif" font-size="10">06:00</text>
+    <text x="400" y="375" fill="#64748B" font-family="sans-serif" font-size="10">12:00</text>
+    <text x="640" y="375" fill="#64748B" font-family="sans-serif" font-size="10">18:00</text>
+
+    <!-- Right Live Audit Log Panel (400px) -->
+    <g transform="translate(720, 0)">
+      <rect x="0" y="0" width="400" height="400" rx="10" fill="#0F172A" stroke="#1E293B" />
+      <text x="20" y="35" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">Security Audit Logs</text>
+
+      <!-- Log Item 1 -->
+      <rect x="20" y="65" width="360" height="65" rx="6" fill="#1E293B" />
+      <text x="35" y="90" fill="#10B981" font-family="sans-serif" font-size="12" font-weight="700">✓ Strict-Transport-Security</text>
+      <text x="35" y="112" fill="#94A3B8" font-family="monospace" font-size="10">max-age=31536000; includeSubDomains</text>
+
+      <!-- Log Item 2 -->
+      <rect x="20" y="145" width="360" height="65" rx="6" fill="#1E293B" />
+      <text x="35" y="170" fill="#10B981" font-family="sans-serif" font-size="12" font-weight="700">✓ Content-Security-Policy</text>
+      <text x="35" y="192" fill="#94A3B8" font-family="monospace" font-size="10">default-src 'self'; frame-ancestors 'none'</text>
+
+      <!-- Log Item 3 -->
+      <rect x="20" y="225" width="360" height="65" rx="6" fill="#1E293B" />
+      <text x="35" y="250" fill="#10B981" font-family="sans-serif" font-size="12" font-weight="700">✓ X-Frame-Options: DENY</text>
+      <text x="35" y="272" fill="#94A3B8" font-family="monospace" font-size="10">Clickjacking attack prevention enabled</text>
+
+      <!-- Log Item 4 -->
+      <rect x="20" y="305" width="360" height="65" rx="6" fill="#1E293B" />
+      <text x="35" y="330" fill="#06B6D4" font-family="sans-serif" font-size="12" font-weight="700">ℹ IP Access Audited</text>
+      <text x="35" y="352" fill="#94A3B8" font-family="monospace" font-size="10">105.112.42.18 — Minna, Nigeria (Authorized)</text>
+    </g>
+  </g>
+</svg>

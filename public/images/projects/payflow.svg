@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Navbar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0B0F17" />
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#334155" stroke-width="1" />
+  <text x="40" y="36" fill="#8B5CF6" font-family="system-ui, sans-serif" font-weight="800" font-size="18">⚡ PayFlow Digital Wallet & API</text>
+  <text x="360" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Merchant Payment Gateway & Developer API Portal</text>
+
+  <!-- Top Balance Card Header -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="540" height="150" rx="14" fill="url(#purpleGrad)" />
+    <text x="35" y="45" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="1">AVAILABLE MERCHANT BALANCE</text>
+    <text x="35" y="95" fill="#FFFFFF" font-family="sans-serif" font-size="38" font-weight="800">₦14,850,200.00</text>
+    <text x="35" y="125" fill="#FFFFFF" font-family="sans-serif" font-size="12" opacity="0.9">⚡ Auto-settlement active (Next payout 12:00 AM)</text>
+
+    <!-- API Key Status Card -->
+    <rect x="560" y="0" width="560" height="150" rx="14" fill="#1E293B" stroke="#8B5CF6" />
+    <text x="590" y="40" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="700">Live API Key Status</text>
+    <rect x="590" y="55" width="500" height="38" rx="6" fill="#0F172A" />
+    <text x="605" y="79" fill="#06B6D4" font-family="monospace" font-size="12">pk_live_8f912a73b9e4012c845291...</text>
+    <text x="590" y="120" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700">✓ Webhooks Active (200 OK • 12ms latency)</text>
+  </g>
+
+  <!-- Transactions & Ledger Table -->
+  <g transform="translate(40, 250)">
+    <rect x="0" y="0" width="1120" height="385" rx="10" fill="#1E293B" stroke="#334155" />
+    <text x="25" y="40" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">Recent Payment Ledger Transactions</text>
+
+    <!-- Table Header -->
+    <rect x="25" y="60" width="1070" height="36" rx="6" fill="#0F172A" />
+    <text x="45" y="83" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">TRANSACTION REF</text>
+    <text x="260" y="83" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">CUSTOMER EMAIL</text>
+    <text x="540" y="83" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">CHANNEL</text>
+    <text x="700" y="83" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">AMOUNT</text>
+    <text x="920" y="83" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="700">STATUS</text>
+
+    <!-- Row 1 -->
+    <text x="45" y="130" fill="#8B5CF6" font-family="monospace" font-size="12">TXN_948120391</text>
+    <text x="260" y="130" fill="#FFFFFF" font-family="sans-serif" font-size="13">buyer@enterprise.ng</text>
+    <text x="540" y="130" fill="#CBD5E1" font-family="sans-serif" font-size="13">Card Payment</text>
+    <text x="700" y="130" fill="#10B981" font-family="sans-serif" font-size="14" font-weight="800">₦250,000.00</text>
+    <rect x="920" y="112" width="90" height="24" rx="12" fill="#10B981" opacity="0.2" />
+    <text x="965" y="128" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">SUCCESS</text>
+    <line x1="25" y1="150" x2="1095" y2="150" stroke="#334155" />
+
+    <!-- Row 2 -->
+    <text x="45" y="190" fill="#8B5CF6" font-family="monospace" font-size="12">TXN_948120392</text>
+    <text x="260" y="190" fill="#FFFFFF" font-family="sans-serif" font-size="13">client@techhub.com</text>
+    <text x="540" y="190" fill="#CBD5E1" font-family="sans-serif" font-size="13">Bank Transfer</text>
+    <text x="700" y="190" fill="#10B981" font-family="sans-serif" font-size="14" font-weight="800">₦1,200,000.00</text>
+    <rect x="920" y="172" width="90" height="24" rx="12" fill="#10B981" opacity="0.2" />
+    <text x="965" y="188" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">SUCCESS</text>
+    <line x1="25" y1="210" x2="1095" y2="210" stroke="#334155" />
+  </g>
+</svg>

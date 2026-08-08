@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#06121E" />
+      <stop offset="100%" stop-color="#14301C" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#84CC16" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Navbar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0B0F17" />
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#334155" stroke-width="1" />
+  <text x="40" y="36" fill="#10B981" font-family="system-ui, sans-serif" font-weight="800" font-size="18">🌾 AgriConnect Mobile Marketplace</text>
+  <text x="380" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Direct Agricultural Produce & Commodity Market</text>
+
+  <!-- Commodity Price Index Ticker Header -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="1120" height="60" rx="10" fill="#1E293B" stroke="#10B981" />
+    <text x="25" y="35" fill="#10B981" font-family="sans-serif" font-size="12" font-weight="700">LIVE GRAIN MARKET TICKER:</text>
+    <text x="220" y="35" fill="#FFFFFF" font-family="sans-serif" font-size="12">🌽 Maize: <tspan fill="#10B981">₦32,000/bag ▲</tspan></text>
+    <text x="420" y="35" fill="#FFFFFF" font-family="sans-serif" font-size="12">🌾 Rice (Paddy): <tspan fill="#10B981">₦48,000/bag ▲</tspan></text>
+    <text x="660" y="35" fill="#FFFFFF" font-family="sans-serif" font-size="12">🥔 Yam (100 Tubers): <tspan fill="#10B981">₦180,000 ▲</tspan></text>
+    <text x="920" y="35" fill="#FFFFFF" font-family="sans-serif" font-size="12">🫘 Soybeans: <tspan fill="#10B981">₦42,000/bag ▲</tspan></text>
+  </g>
+
+  <!-- Produce Listings Grid -->
+  <g transform="translate(40, 160)">
+    <!-- Listing 1 -->
+    <rect x="0" y="0" width="350" height="475" rx="12" fill="#1E293B" stroke="#334155" />
+    <rect x="15" y="15" width="320" height="180" rx="8" fill="#0F172A" />
+    <text x="175" y="115" fill="#10B981" font-family="sans-serif" font-size="48" text-anchor="middle">🌾</text>
+    <text x="20" y="225" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">500 Bags Organic Rice</text>
+    <text x="20" y="245" fill="#94A3B8" font-family="sans-serif" font-size="12">Harvest Origin: Mokwa, Niger State</text>
+    <text x="20" y="280" fill="#10B981" font-family="sans-serif" font-size="22" font-weight="800">₦45,000 <tspan font-size="12" fill="#94A3B8">/ bag</tspan></text>
+    <rect x="20" y="310" width="310" height="40" rx="6" fill="#0F172A" />
+    <text x="35" y="335" fill="#CBD5E1" font-family="sans-serif" font-size="12">Farmer: Alhaji Usman (Verified Co-Op)</text>
+    <rect x="20" y="405" width="310" height="48" rx="8" fill="url(#greenGrad)" />
+    <text x="175" y="434" fill="#090D16" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">Contact Farmer Directly</text>
+
+    <!-- Listing 2 -->
+    <rect x="385" y="0" width="350" height="475" rx="12" fill="#1E293B" stroke="#334155" />
+    <rect x="400" y="15" width="320" height="180" rx="8" fill="#0F172A" />
+    <text x="560" y="115" fill="#F59E0B" font-family="sans-serif" font-size="48" text-anchor="middle">🌽</text>
+    <text x="405" y="225" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">1,000 Bags Yellow Maize</text>
+    <text x="405" y="245" fill="#94A3B8" font-family="sans-serif" font-size="12">Harvest Origin: Bida, Niger State</text>
+    <text x="405" y="280" fill="#10B981" font-family="sans-serif" font-size="22" font-weight="800">₦30,000 <tspan font-size="12" fill="#94A3B8">/ bag</tspan></text>
+    <rect x="405" y="310" width="310" height="40" rx="6" fill="#0F172A" />
+    <text x="420" y="335" fill="#CBD5E1" font-family="sans-serif" font-size="12">Farmer: Kida Cooperative Union</text>
+    <rect x="405" y="405" width="310" height="48" rx="8" fill="url(#greenGrad)" />
+    <text x="560" y="434" fill="#090D16" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">Contact Farmer Directly</text>
+
+    <!-- Listing 3 -->
+    <rect x="770" y="0" width="350" height="475" rx="12" fill="#1E293B" stroke="#334155" />
+    <rect x="785" y="15" width="320" height="180" rx="8" fill="#0F172A" />
+    <text x="945" y="115" fill="#84CC16" font-family="sans-serif" font-size="48" text-anchor="middle">🍠</text>
+    <text x="790" y="225" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">Commercial Yam Tubers</text>
+    <text x="790" y="245" fill="#94A3B8" font-family="sans-serif" font-size="12">Harvest Origin: Paikoro, Niger State</text>
+    <text x="790" y="280" fill="#10B981" font-family="sans-serif" font-size="22" font-weight="800">₦175,000 <tspan font-size="12" fill="#94A3B8">/ 100 tubers</tspan></text>
+    <rect x="790" y="310" width="310" height="40" rx="6" fill="#0F172A" />
+    <text x="805" y="335" fill="#CBD5E1" font-family="sans-serif" font-size="12">Farmer: Paiko Agritech Union</text>
+    <rect x="790" y="405" width="310" height="48" rx="8" fill="url(#greenGrad)" />
+    <text x="945" y="434" fill="#090D16" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">Contact Farmer Directly</text>
+  </g>
+</svg>
