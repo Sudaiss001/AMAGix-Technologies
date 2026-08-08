@@ -39,9 +39,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "https://github.com/amagixtech/ecommerce-demo",
-    image: "/images/projects/ecommerce.svg",
+    image: "/images/projects/ecommerce.png",
     gallery: [
-      "/images/projects/ecommerce.svg"
+      "/images/projects/ecommerce.png"
     ],
     technologies: ["React", "Tailwind CSS", "TypeScript", "Laravel", "MySQL"],
     featured: true,
@@ -67,9 +67,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "",
-    image: "/images/projects/cbt.svg",
+    image: "/images/projects/cbt.png",
     gallery: [
-      "/images/projects/cbt.svg"
+      "/images/projects/cbt.png"
     ],
     technologies: ["React", "TypeScript", "Node.js", "SQLite", "Tailwind CSS"],
     featured: true,
@@ -95,9 +95,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "https://github.com/amagixtech/cybershield-dashboard",
-    image: "/images/projects/cybershield.svg",
+    image: "/images/projects/cybershield.png",
     gallery: [
-      "/images/projects/cybershield.svg"
+      "/images/projects/cybershield.png"
     ],
     technologies: ["React", "Tailwind CSS", "Python", "FastAPI", "Docker"],
     featured: true,
@@ -123,9 +123,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "",
-    image: "/images/projects/school-portal.svg",
+    image: "/images/projects/school-portal.png",
     gallery: [
-      "/images/projects/school-portal.svg"
+      "/images/projects/school-portal.png"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Laravel", "PostgreSQL"],
     featured: false,
@@ -151,9 +151,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "",
-    image: "/images/projects/healthtrack.svg",
+    image: "/images/projects/healthtrack.png",
     gallery: [
-      "/images/projects/healthtrack.svg"
+      "/images/projects/healthtrack.png"
     ],
     technologies: ["React Native", "TypeScript", "Node.js", "MongoDB"],
     featured: false,
@@ -179,9 +179,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "",
-    image: "/images/projects/inventory.svg",
+    image: "/images/projects/inventory.png",
     gallery: [
-      "/images/projects/inventory.svg"
+      "/images/projects/inventory.png"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Express.js", "SQLite"],
     featured: false,
@@ -207,9 +207,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "",
-    image: "/images/projects/payflow.svg",
+    image: "/images/projects/payflow.png",
     gallery: [
-      "/images/projects/payflow.svg"
+      "/images/projects/payflow.png"
     ],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Laravel", "MySQL", "Redis"],
     featured: true,
@@ -235,9 +235,9 @@ export const projects: Project[] = [
     previewUrl: "",
     liveUrl: "",
     githubUrl: "",
-    image: "/images/projects/agriconnect.svg",
+    image: "/images/projects/agriconnect.png",
     gallery: [
-      "/images/projects/agriconnect.svg"
+      "/images/projects/agriconnect.png"
     ],
     technologies: ["Flutter", "Dart", "Firebase", "Node.js"],
     featured: false,

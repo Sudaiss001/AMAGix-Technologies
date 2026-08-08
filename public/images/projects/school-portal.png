@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)" />
+
+  <!-- Navbar Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0B0F17" />
+  <line x1="0" y1="60" x2="1200" y2="60" stroke="#334155" stroke-width="1" />
+  <text x="40" y="36" fill="#06B6D4" font-family="system-ui, sans-serif" font-weight="800" font-size="18">🏫 School Management Portal</text>
+  <text x="340" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Academic Records, Grading & Attendance Portal</text>
+
+  <!-- Metric Cards -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="260" height="110" rx="8" fill="#1E293B" stroke="#334155" />
+    <text x="20" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Total Students Enrolled</text>
+    <text x="20" y="75" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800">1,248</text>
+
+    <rect x="286" y="0" width="260" height="110" rx="8" fill="#1E293B" stroke="#334155" />
+    <text x="306" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Fee Payment Clearance</text>
+    <text x="306" y="75" fill="#10B981" font-family="sans-serif" font-size="32" font-weight="800">94.2%</text>
+
+    <rect x="572" y="0" width="260" height="110" rx="8" fill="#1E293B" stroke="#334155" />
+    <text x="592" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Report Cards Issued</text>
+    <text x="592" y="75" fill="#06B6D4" font-family="sans-serif" font-size="32" font-weight="800">1,200</text>
+
+    <rect x="858" y="0" width="262" height="110" rx="8" fill="#1E293B" stroke="#334155" />
+    <text x="878" y="35" fill="#94A3B8" font-family="sans-serif" font-size="12">Daily Student Attendance</text>
+    <text x="878" y="75" fill="#8B5CF6" font-family="sans-serif" font-size="32" font-weight="800">98.5%</text>
+  </g>
+
+  <!-- Student Roster Data Table -->
+  <g transform="translate(40, 210)">
+    <rect x="0" y="0" width="1120" height="420" rx="10" fill="#1E293B" stroke="#334155" />
+    <text x="25" y="40" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="700">Student Academic Roster & Performance Overview</text>
+    
+    <!-- Table Header Row -->
+    <rect x="25" y="60" width="1070" height="40" rx="6" fill="#0F172A" />
+    <text x="45" y="85" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="700">STUDENT ID</text>
+    <text x="180" y="85" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="700">FULL NAME</text>
+    <text x="450" y="85" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="700">CLASS</text>
+    <text x="600" y="85" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="700">AVERAGE SCORE</text>
+    <text x="800" y="85" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="700">FEE STATUS</text>
+    <text x="980" y="85" fill="#94A3B8" font-family="sans-serif" font-size="12" font-weight="700">ACTION</text>
+
+    <!-- Table Row 1 -->
+    <line x1="25" y1="160" x2="1095" y2="160" stroke="#334155" />
+    <text x="45" y="140" fill="#06B6D4" font-family="monospace" font-size="13">STU-2026-001</text>
+    <text x="180" y="140" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600">Amina Mohammed</text>
+    <text x="450" y="140" fill="#CBD5E1" font-family="sans-serif" font-size="13">SS 3 Gold</text>
+    <text x="600" y="140" fill="#10B981" font-family="sans-serif" font-size="13" font-weight="700">89.4% (A)</text>
+    <rect x="800" y="122" width="80" height="24" rx="12" fill="#10B981" opacity="0.2" />
+    <text x="840" y="138" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Cleared</text>
+    <rect x="980" y="122" width="90" height="24" rx="4" fill="#06B6D4" />
+    <text x="1025" y="138" fill="#090D16" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Report Card</text>
+
+    <!-- Table Row 2 -->
+    <line x1="25" y1="220" x2="1095" y2="220" stroke="#334155" />
+    <text x="45" y="200" fill="#06B6D4" font-family="monospace" font-size="13">STU-2026-002</text>
+    <text x="180" y="200" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600">Ibrahim Abubakar</text>
+    <text x="450" y="200" fill="#CBD5E1" font-family="sans-serif" font-size="13">SS 3 Gold</text>
+    <text x="600" y="200" fill="#10B981" font-family="sans-serif" font-size="13" font-weight="700">92.1% (A+)</text>
+    <rect x="800" y="182" width="80" height="24" rx="12" fill="#10B981" opacity="0.2" />
+    <text x="840" y="198" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Cleared</text>
+    <rect x="980" y="182" width="90" height="24" rx="4" fill="#06B6D4" />
+    <text x="1025" y="198" fill="#090D16" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Report Card</text>
+
+    <!-- Table Row 3 -->
+    <line x1="25" y1="280" x2="1095" y2="280" stroke="#334155" />
+    <text x="45" y="260" fill="#06B6D4" font-family="monospace" font-size="13">STU-2026-003</text>
+    <text x="180" y="260" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="600">Grace Danjuma</text>
+    <text x="450" y="260" fill="#CBD5E1" font-family="sans-serif" font-size="13">SS 2 Silver</text>
+    <text x="600" y="260" fill="#06B6D4" font-family="sans-serif" font-size="13" font-weight="700">78.6% (B)</text>
+    <rect x="800" y="242" width="80" height="24" rx="12" fill="#10B981" opacity="0.2" />
+    <text x="840" y="258" fill="#10B981" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Cleared</text>
+    <rect x="980" y="242" width="90" height="24" rx="4" fill="#06B6D4" />
+    <text x="1025" y="258" fill="#090D16" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Report Card</text>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Monitor } from "lucide-react";
 
 export interface ProjectPreviewProps {
@@ -18,6 +18,12 @@ export const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 }) => {
   const [iframeError, setIframeError] = useState(false);
   const [imageError, setImageError] = useState(false);
+
+  // Reset errors whenever props change
+  useEffect(() => {
+    setImageError(false);
+    setIframeError(false);
+  }, [image, previewUrl]);
 
   // 1. Try Live Iframe if previewUrl exists and has not failed
   const showIframe = Boolean(previewUrl && !iframeError);
