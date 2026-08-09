@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate, Navigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Eye, EyeOff, ShieldCheck, ArrowRight, AlertCircle, KeyRound } from "lucide-react";
+import { Eye, EyeOff, ShieldCheck, ArrowRight, AlertCircle } from "lucide-react";
 import { Button } from "../../components/ui/Button";
 import { Input } from "../../components/ui/Input";
 import { Card } from "../../components/ui/Card";
 import { SEO } from "../../components/common/SEO";
-import { Modal } from "../components/Modal";
 import { useAdminAuth } from "../context/AdminAuthContext";
 
 export const AdminLogin: React.FC = () => {
@@ -16,13 +15,9 @@ export const AdminLogin: React.FC = () => {
   const [email, setEmail] = useState("amagixtechnologies@gmail.com");
   const [password, setPassword] = useState("admin123");
   const [showPassword, setShowPassword] = useState(false);
-  const [rememberMe, setRememberMe] = useState(true);
   
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [forgotModalOpen, setForgotModalOpen] = useState(false);
-  const [forgotEmail, setForgotEmail] = useState("");
-  const [forgotSuccess, setForgotSuccess] = useState(false);
 
   if (isAuthenticated) {
     return <Navigate to="/admin" replace />;
@@ -34,7 +29,7 @@ export const AdminLogin: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await login(email, password, rememberMe);
+      const res = await login(email, password);
       if (res.success) {
         navigate("/admin");
       } else {
@@ -44,18 +39,6 @@ export const AdminLogin: React.FC = () => {
       setError("An error occurred during login. Please try again.");
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const handleForgotSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (forgotEmail.trim()) {
-      setForgotSuccess(true);
-      setTimeout(() => {
-        setForgotSuccess(false);
-        setForgotModalOpen(false);
-        setForgotEmail("");
-      }, 3000);
     }
   };
 
@@ -107,7 +90,7 @@ export const AdminLogin: React.FC = () => {
             </AnimatePresence>
 
             {/* Login Form */}
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <Input
                 label="Administrator Email"
                 type="email"
@@ -141,36 +124,17 @@ export const AdminLogin: React.FC = () => {
                 </div>
               </div>
 
-              {/* Remember Me & Forgot Password Row */}
-              <div className="flex items-center justify-between text-xs pt-1">
-                <label className="flex items-center space-x-2 text-gray-400 cursor-pointer select-none">
-                  <input
-                    type="checkbox"
-                    checked={rememberMe}
-                    onChange={(e) => setRememberMe(e.target.checked)}
-                    className="rounded bg-gray-900 border-gray-800 text-cyan-500 focus:ring-cyan-500/20"
-                  />
-                  <span>Remember me</span>
-                </label>
-
-                <button
-                  type="button"
-                  onClick={() => setForgotModalOpen(true)}
-                  className="text-cyan-400 hover:text-cyan-300 font-semibold transition-colors"
+              <div className="pt-2">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full"
+                  isLoading={isSubmitting}
+                  rightIcon={<ArrowRight className="w-4 h-4" />}
                 >
-                  Forgot password?
-                </button>
+                  {isSubmitting ? "Authenticating..." : "Login to Dashboard"}
+                </Button>
               </div>
-
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full"
-                isLoading={isSubmitting}
-                rightIcon={<ArrowRight className="w-4 h-4" />}
-              >
-                {isSubmitting ? "Authenticating..." : "Login to Dashboard"}
-              </Button>
             </form>
 
             {/* Frontend Simulation Note */}
@@ -183,43 +147,6 @@ export const AdminLogin: React.FC = () => {
           </Card>
         </motion.div>
       </div>
-
-      {/* Forgot Password Modal */}
-      <Modal
-        isOpen={forgotModalOpen}
-        onClose={() => setForgotModalOpen(false)}
-        title="Reset Administrator Password"
-      >
-        {forgotSuccess ? (
-          <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs text-center space-y-2">
-            <KeyRound className="w-6 h-6 text-emerald-400 mx-auto" />
-            <p className="font-bold">Password Reset Email Simulated!</p>
-            <p>In the future, Laravel Sanctum will send a secure reset link to {forgotEmail}.</p>
-          </div>
-        ) : (
-          <form onSubmit={handleForgotSubmit} className="space-y-4">
-            <p className="text-xs text-gray-400 leading-relaxed">
-              Enter your registered administrator email address below to receive password recovery instructions.
-            </p>
-            <Input
-              label="Email Address"
-              type="email"
-              required
-              placeholder="amagixtechnologies@gmail.com"
-              value={forgotEmail}
-              onChange={(e) => setForgotEmail(e.target.value)}
-            />
-            <div className="flex justify-end gap-3 pt-2">
-              <Button type="button" variant="outline" size="sm" onClick={() => setForgotModalOpen(false)}>
-                Cancel
-              </Button>
-              <Button type="submit" size="sm">
-                Send Reset Link
-              </Button>
-            </div>
-          </form>
-        )}
-      </Modal>
     </>
   );
 };
